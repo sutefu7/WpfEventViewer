@@ -2,8 +2,10 @@
 
 <br >
 <br >
-![トップ画像](https://raw.githubusercontent.com/sutefu7/WpfEventViewer/master/Docs/image01.png)  
 
+![トップ画像](https://raw.githubusercontent.com/sutefu7/WpfEventViewer/master/Docs/image01.png)
+
+<br>
 <br>
 　WpfEventViewer は、Windows のイベントログを表示するソフト、いわゆるイベントビューアです。Windows 標準のイベントビューアが文字列による表現なのに対して、WpfEventViewer ではイメージによる表現（データの視覚化）を重視して作成しています。つまり文字列を読んで理解するのではなく、イメージを見て理解します。  
 
