@@ -1,0 +1,34 @@
+﻿<Application x:Class="WpfEventViewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Views\MainWindow.xaml"
+             Startup="Application_Startup">
+
+    <!-- RibbonWindow を起動すると、黒い画面が表示される問題の対応 -->
+    <!-- github -->
+    <!-- Can not get started with Fluent Ribbon (Black window appeared) #111 -->
+    <!-- https://github.com/fluentribbon/Fluent.Ribbon/issues/111 -->
+    <!-- → Office2010/Silver.xaml 以外に、Generic.xaml も一緒に指定すると良いみたい -->
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!--Attach Default Fluent Control's Theme-->
+                <ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Generic.xaml" />
+
+                <!-- 仕様で以下のテーマは消されました -->
+                <!-- https://github.com/fluentribbon/Fluent.Ribbon -->
+                
+                <!-- 一番最後に指定したものが反映される仕組み？ -->
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Office2010/Silver.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Office2013/Generic.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Windows8/Generic.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Metro/White.xaml" />-->
+                <!--<ResourceDictionary Source="/Resources/Icons.xaml" />-->
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
