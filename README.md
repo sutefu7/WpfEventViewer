@@ -78,6 +78,19 @@
   
   
 
+## アプリ名
+
+　WpfEventViewer  
+　Windows デスクトップ用のアプリケーション  
+　32 ビット版  
+
+
+## ダウンロード
+
+　Visual Studio が入っていない方向けに、実行プログラムを圧縮したファイルをアップロードしていますので、以下フォルダよりその時の最新版をダウンロードできます。  
+
+[/BuildFiles/](https://github.com/sutefu7/WpfEventViewer/tree/master/BuildFiles)  
+
 ## 動作環境
 
 * Windows 8.1 Pro  
@@ -106,6 +119,53 @@
 * Livet  
 * Fluent.Ribbon  
 * OxyPlot.WPF  
+
+## 実現技術の調査で参考にさせていただいたリンク
+
+
+github  
+RibbonWindow を起動すると、黒い画面が表示される問題の対応  
+Can not get started with Fluent Ribbon (Black window appeared) #111  
+[https://github.com/fluentribbon/Fluent.Ribbon/issues/111](https://github.com/fluentribbon/Fluent.Ribbon/issues/111)  
+→ Office2010/Silver.xaml 以外に、Generic.xaml も一緒に指定すると良いみたい  
+→2017/04/18 Offce や Windows8 など他のスキン？は正式に機能削除されたので、使えなくなりました  
+
+
+かずきのBlog  
+[C#][WPF]カレンダーを作ってみよう  
+[http://blogs.wankuma.com/kazuki/archive/2008/01/20/118342.aspx](http://blogs.wankuma.com/kazuki/archive/2008/01/20/118342.aspx)  
+かずきさんのブログに乗っているプログラムをベースに、カレンダーコントロールに年月日切り替え機能を追加しました  
+
+
+stackoverflow  
+ManagementDateTimeConverter.ToDateTime メソッドで、独自文字列型の日付を DateTime 型に変換できる  
+[http://stackoverflow.com/questions/23816470/c-sharp-wmi-reading-remote-event-log](http://stackoverflow.com/questions/23816470/c-sharp-wmi-reading-remote-event-log)  
+
+
+Netplanetes Memo  
+Win32_NTLogEvent をデータクラスとして扱う  
+[http://www.pine4.net/Memo/Article/Archives/102](http://www.pine4.net/Memo/Article/Archives/102)  
+
+
+以前機能として組み込んでいたが、機能削除したもの（削除した機能で参考にしてたもの）  
+
+
+stackoverflow  
+MVVM Passing EventArgs As Command Parameter  
+[http://stackoverflow.com/questions/6205472/mvvm-passing-eventargs-as-command-parameter](http://stackoverflow.com/questions/6205472/mvvm-passing-eventargs-as-command-parameter)  
+LivetCallMethodAction で、イベント引数を受け取りたい。の実装。  
+
+
+codeplex  
+アイコンを指定しても表示されない。の対応  
+RibbonToolbar looks in wrong place for images  
+[http://fluent.codeplex.com/workitem/18947](http://fluent.codeplex.com/workitem/18947)  
+
+
+stackoverflow  
+How to display values as images in GridViewColumn?  
+[http://stackoverflow.com/questions/3823323/how-to-display-values-as-images-in-gridviewcolumn](http://stackoverflow.com/questions/3823323/how-to-display-values-as-images-in-gridviewcolumn)  
+
 
 
 
